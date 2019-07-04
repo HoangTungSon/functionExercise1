@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name = prompt("Enter the star name");
+
+    function compare(name) {
+        let starName = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let star = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor", "Leo"];
+        let result;
+        for (let i=0; i<starName.length; i++){
+            if(name == starName[i]){
+                result = star[i];
+            }
+        }
+       alert(result);
+    }
+    compare(name);
+
+</script>
+</body>
+</html>

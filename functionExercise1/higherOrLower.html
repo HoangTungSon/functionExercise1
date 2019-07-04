@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>higher or lower</title>
+</head>
+<body>
+<button onclick="compare(num1,num2)">compare</button>
+<script>
+        function compare(num1, num2) {
+            let dis = num1 - num2;
+            if (dis > 0) {
+                alert(num1 + " is higher")
+            } else if (dis < 0) {
+                alert(num2 + " is higher")
+            } else {
+                alert("equal")
+            }
+        }
+        let num1 = parseInt(prompt("Enter the number"));
+        let num2 = parseInt(prompt("Enter the number"));
+</script>
+</body>
+</html>
